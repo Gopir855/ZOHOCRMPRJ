@@ -18,7 +18,7 @@ import zoho_genric_script.Take_Screen_Shot;
 public class BaseTest implements URL 
 {
 	public static WebDriver driver;
-
+//before testNG annotation to launch the browser
 	@BeforeMethod
 	public void openApp() throws InterruptedException 
 	{
