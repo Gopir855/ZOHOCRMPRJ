@@ -15,11 +15,13 @@ import org.testng.annotations.BeforeMethod;
 
 import zoho_genric_script.Take_Screen_Shot;
 
-public class BaseTest implements URL {
+public class BaseTest implements URL 
+{
 	public static WebDriver driver;
 
 	@BeforeMethod
-	public void openApp() throws InterruptedException {
+	public void openApp() throws InterruptedException 
+	{
 		ChromeOptions options = new ChromeOptions();
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.default_content_setting_values.notifications", 2); 
@@ -49,8 +51,7 @@ public class BaseTest implements URL {
 		driver.findElement(By.xpath("//a[@id=\"Visible_Leads\"]")).click();
 		String Title3 = driver.getTitle();
 		System.out.println(Title3);
-		Assert.assertEquals(Title3, "Home Page - Zoho CRM");
-	
+		Assert.assertEquals(Title3, "Home Page - Zoho CRM");	
 	}
 
 	@AfterMethod
