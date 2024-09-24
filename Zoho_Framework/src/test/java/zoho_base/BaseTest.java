@@ -17,7 +17,7 @@ import zoho_genric_script.Take_Screen_Shot;
 
 public class BaseTest implements URL {
 	public static WebDriver driver;
-
+//method to launch the browser
 	@BeforeMethod
 	public void openApp() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
